@@ -2,9 +2,8 @@
 
 namespace Database\Seeders;
 
-use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
-use Illuminate\Support\Facades\DB;
+use App\Models\Post;
 
 class PostsTableSeeder extends Seeder
 {
@@ -13,10 +12,7 @@ class PostsTableSeeder extends Seeder
      */
     public function run(): void
     {
-        DB::table('posts')->insert([
-            ['Title' => 'First Post', 'Content' => 'This is the first post content.', 'user_id' => 1, 'created_at' => now(), 'updated_at' => now()],
-            ['Title' => 'Second Post', 'Content' => 'This is the second post content.', 'user_id' => 2, 'created_at' => now(), 'updated_at' => now()],
-        ]);
-
+        // إنشاء 50 بوست عشوائي
+        Post::factory()->count(50)->create();
     }
 }
