@@ -1,4 +1,3 @@
-    <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark sticky-top glass-navbar">
         <div class="container">
             <a class="navbar-brand fw-bold" href="{{ route('home') }}">مدونتي 📝</a>
@@ -64,6 +63,6 @@
     }
 
     .nav-link.active {
-        color: #0dcaf0 !important; 
+        color: #0dcaf0 !important;
     }
     </style>

@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 <!DOCTYPE html>
 <html lang="ar">
 <head>
@@ -32,7 +33,7 @@
         }
 
         main {
-            flex: 1; 
+            flex: 1;
         }
 
         footer {

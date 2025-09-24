@@ -5,7 +5,7 @@ namespace App\Http\Middleware;
 use Closure;
 use Illuminate\Support\Facades\Auth;
 
-class AdminMiddleware
+class IsAdmin
 {
     public function handle($request, Closure $next)
     {
@@ -13,6 +13,7 @@ class AdminMiddleware
             return $next($request);
         }
 
-        return redirect('/home')->with('error', 'غير مسموح لك بالدخول هنا ');
+        // return redirect('/home')->with('error', 'غير مسموح لك بالدخول هنا ');
+         abort(403, 'غير مسموح بالدخول');
     }
 }
